@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-v4.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/rtl.css">
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div class="conavbar">
+        <ul dropdown>
+            <li>
+                <a href="#">
+                    <span>C</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-home"></span>
+                    <span class="title">
+                    Royal admin
+                </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-comment"></span> 1
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    <span class="title">New</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                        New Post
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        New Page
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        New Category
+                    </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--sidebar-->
+    <div class="cosidebar">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="fa fa-tachometer"></span>
+                    <span class="title">
+                    Dashboard
+                </span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <span class="fa fa-thumb-tack"></span>
+                    <span class="title">
+                    Posts <span class="pending-count">45</span>
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="active">
+                        <a href="posts.html">
+                        All Posts
+                    </a>
+                    </li>
+                    <li>
+                        <a href="new-post.html">
+                        Add New
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Categories
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Tags
+                    </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="media.html">
+                    <span class="fa fa-file-image-o"></span>
+                    <span class="title">
+                    Media 
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-file"></span>
+                    <span class="title">
+                    Pages
+                </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-comment"></span>
+                    <span class="title">
+                    Comments
+                </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plug"></span>
+                    <span class="title">
+                    Plugins
+                </span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">
+                        Installed Plugins
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Add New
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Editor
+                    </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-wrench"></span>
+                    <span class="title">
+                    Tools
+                </span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <span class="fa fa-cog"></span>
+                    <span class="title">
+                    Settings
+                </span>
+                </a>
+            </li>
+            <li class="line">
+                <span></span>
+            </li>
+        </ul>
+        <a href="void(0)" class="collapse-menu">
+            <span class="fa fa-chevron-circle-right"></span>
+            <span class="title">
+            Collapse menu
+        </span>
+        </a>
+
+    </div>
+
+    <!--content-->
+    <div class="content">
+
+        <div class="box-">
+            <h1>Add New Post</h1>
+        </div>
+
+        <div class="message success box-">
+            Is everything alright? <a href="#">link is here</a>
+        </div>
+
+        <div class="clear" style="height: 10px;"></div>
+
+        <div class="row">
+            <div class="col-lg-9 col-12">
+                <div class="box-container post-content">
+                    <div class="box-">
+
+                        <form action="" class="form">
+                            <ul>
+                                <li>
+                                    <input type="text" class="big" placeholder="Enter title here">
+                                </li>
+                                <li>
+                                    <textarea name="editor1" id="editor" rows="10" cols="80"></textarea>
+                                </li>
+                            </ul>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="row" id="container-left">
+                    <div class="col-12">
+                        <div class="box-container post-content">
+                            <div class="box">
+                                <h3 class="handle">
+                                    test et
+                                </h3>
+                                <div class="box-content">
+                                    test et bakalm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 drag-container" id="container-right">
+                <div class="box-container post-rightbar">
+                    <div class="box">
+                        <h3 class="handle">
+                            Publish
+                        </h3>
+                        <div class="box-content">
+
+                            <a href="#" class="btn right">Preview</a>
+                            <a href="#" class="btn">Save Draft</a>
+
+                            <div class="publish-content">
+                                <button type="submit">Publish</button>
+                                <a href="#" class="move-trash">Move to trash</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container post-rightbar">
+                    <div class="box">
+                        <h3 class="handle">
+                            Categories
+                        </h3>
+                        <div class="box-content">
+                            <div class="category-container">
+                                <ul id="category-container">
+                                    <li>
+                                        <label for="1">
+                                            <input type="checkbox" id="1">
+                                            Uncategorized
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="2">
+                                            <input type="checkbox" id="2">
+                                            Digital
+                                        </label>
+                                        <ul class="children">
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    Mobile
+                                                </label>
+                                                <ul class="children">
+                                                    <li>
+                                                        <label for="3">
+                                                            <input type="checkbox" id="3">
+                                                            Apple
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="3">
+                                                            <input type="checkbox" id="3">
+                                                            Samsung
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="3">
+                                                            <input type="checkbox" id="3">
+                                                            Xiaomi
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    Laptop
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    PC
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    Camera
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    Speaker
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    USB
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="3">
+                                                    <input type="checkbox" id="3">
+                                                    Modem
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="add-new-cat">
+                                <a href="#" data-target="#add-new-cat" data-toggle="collapse" role="button">
+                                    <i class="fa fa-plus"></i> Add New Category
+                                </a>
+                            </div>
+                            <div class="collapsing mt-4" id="add-new-cat">
+                                <label for="cat-title">
+                                    Category Title
+                                </label>
+                                <input type="text" id="cat-title">
+
+                                <label for="cat-parent">
+                                    Category parent
+                                </label>
+                                <select name="cat-parent" id="cat-parent">
+                                    <option value="1">
+                                        Digital
+                                    </option>
+                                    <option value="2">
+                                        Mobile   
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--scripts-->
+    <script src="assets/scripts/jquery-1.12.2.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.5.7/basic/ckeditor.js"></script>
+    <script src="assets/scripts/admin.js"></script>
+    <script src="assets/vendor/sortable/Sortable.min.js"></script>
+    <script src="assets/vendor/bootstrap-v4.5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let A = document.querySelector('#container-left');
+        let B = document.querySelector('#container-right');
+
+        Sortable.create(A, {
+            animation: 100,
+            group: {
+                name: "side1",
+                pull: true,
+                revertClone: true,
+            },
+            ghostClass: "drop-box",
+            sort: true,
+            handle: ".handle",
+            onStart: function(evt) {
+                A.style.border = "3px dashed #486075"
+            },
+            onEnd: function(evt) {
+                A.style.border = "3px dashed transparent"
+            },
+        });
+
+        Sortable.create(B, {
+            animation: 100,
+            group: {
+                name: "side2",
+                pull: true,
+                revertClone: true,
+            },
+            ghostClass: "drop-box",
+            sort: true,
+            handle: ".handle",
+            onStart: function(evt) {
+                B.style.border = "3px dashed #486075"
+            },
+            onEnd: function(evt) {
+                B.style.border = "3px dashed transparent"
+            },
+        });
+    </script>
+</body>
+
+</html>

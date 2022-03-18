@@ -1,0 +1,84 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.cosidebar {
+    float: right;
+}
+
+.conavbar ul {
+    float: right;
+}
+
+.cosidebar>ul>li.active>a:before {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.cosidebar>ul>li .dropdown-menu {
+    right: 180px;
+}
+
+.cosidebar>ul>li .dropdown-menu:before {
+    left: auto;
+    right: -16px;
+    transform: rotate(180deg);
+}
+
+.conavbar>ul>li ul {
+    right: 0;
+}
+
+.conavbar>ul>li {
+    float: right;
+}
+
+.cosidebar>ul>li .dropdown-menu li a {
+    text-align: right;
+}
+
+.table table thead tr th {
+    text-align: right;
+}
+
+.form.label li .label,
+.form.label li label:not(.not) {
+    float: right;
+}
+
+.form.label li .form-content {
+    padding-left: 0;
+    padding-right: 200px;
+}
+
+.message {
+    border-left: none;
+    border-right: 4px solid #777;
+}
+
+.btn.right {
+    float: left;
+}
+
+@media (max-width: 1100px) {}
+
+@media (max-width: 900px) {
+    .form.label li .form-content {
+        padding-right: 0 !important;
+    }
+}
+
+.category-container li .children {
+    margin-right: 1.2rem;
+    margin-left: 0;
+}
+
+.conavbar .dp-left {
+    float: left;
+}
+
+.conavbar .dp-left ul {
+    left: 5px;
+    right: auto;
+}

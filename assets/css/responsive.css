@@ -1,0 +1,95 @@
+@media all and (max-width: 1300px) {
+  .content .box-container.container-25 {
+    width: 50%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .content .box-container {
+    width: 100% !important;
+  }
+
+  .post-content {
+    padding-right: 0 !important;
+    float: none !important;
+  }
+
+  .post-rightbar {
+    margin-left: 0 !important;
+    float: none !important;
+  }
+}
+@media all and (max-width: 900px) {
+  .navbar {
+    height: 50px;
+  }
+  .navbar > ul > li > a {
+    line-height: 50px;
+    font-size: 22px;
+  }
+  .navbar > ul > li > a .fa {
+    font-size: 25px;
+  }
+  .navbar > ul > li > a .title {
+    display: none;
+  }
+  .navbar > ul > li ul {
+    top: 50px;
+  }
+
+  .content,
+.sidebar {
+    height: calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+  }
+
+  .form.label li label, .form.label li .label {
+    float: none !important;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px !important;
+  }
+  .form.label li .form-content {
+    padding-left: 0 !important;
+  }
+  .form.label li .form-content input:not([type=file]):not([type=checkbox]):not([type=radio]), .form.label li .form-content textarea, .form.label li .form-content select {
+    width: 100% !important;
+  }
+  .form.label li.submit {
+    padding-left: 0;
+  }
+
+  .sidebar {
+    width: 50px !important;
+  }
+  .sidebar .title {
+    display: none !important;
+  }
+  .sidebar .fa {
+    width: 50px !important;
+    font-size: 20px !important;
+    text-indent: -3px !important;
+  }
+  .sidebar > ul > li > a {
+    padding: 5px 0 !important;
+  }
+  .sidebar > ul > li .sub-menu {
+    display: none !important;
+  }
+  .sidebar > ul > li .dropdown-menu {
+    left: 50px !important;
+  }
+  .sidebar > ul > li .dropdown-menu:before {
+    top: 15px !important;
+  }
+  .sidebar li.line, .sidebar .collapse-menu {
+    display: none !important;
+  }
+
+  .hide {
+    display: none !important;
+  }
+}
+
+#collapse-btn {
+  transform: rotate(180deg);
+}
