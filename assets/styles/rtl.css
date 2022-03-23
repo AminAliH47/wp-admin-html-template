@@ -86,3 +86,19 @@ body {
 .content .post-rightbar {
     float: left;
 }
+
+select {
+    background-position: left 5px top 55%;
+    padding-left: 25px;
+}
+
+.modal-header .close {
+    border-right: 1px solid #dcdcde;
+    left: 0;
+    right: auto;
+}
+
+.media-secondary {
+    border-left: none;
+    border-right: 1px solid #dcdcde;
+}

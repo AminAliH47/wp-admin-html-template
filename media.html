@@ -215,65 +215,144 @@
                 <div class="box-container">
                     <div class="box" id="div-0">
                         <div class="box-content">
-                            <select id="media-attachment-filters" class="attachment-filters">
-                                <option value="all">All media items</option><option value="image">Images</option>
-                                <option value="audio">Audio</option><option value="video">Video</option>
-                                <option value="xcel">Spreadsheets</option>
-                                <option value="7z-compressed">Archives</option>
-                                <option value="unattached">Unattached</option>
-                                <option value="mine">Mine</option>
-                            </select>
+                            <form action="" method="get">
+                                <select class="mx-2">
+                                    <option value="all">All media items</option>
+                                    <option value="image">Images</option>
+                                    <option value="audio">Audio</option>
+                                    <option value="video">Video</option>
+                                    <option value="xcel">Spreadsheets</option>
+                                    <option value="7z-compressed">Archives</option>
+                                    <option value="unattached">Unattached</option>
+                                    <option value="mine">Mine</option>
+                                </select>
+                                <select class="mx-2">
+                                    <option value>All Dates</option>
+                                    <option value="20-march">20 March</option>
+                                </select>
+                            </form>
                         </div>
                     </div>
                 </div>
 
                 <div class="row px-4">
                     <div class="col-lg-2 col-6 ">
-                        <div class="media">
-                            <img src="assets/images/logo.png" alt="image1">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 media">
-                        <a href="void(0)" role="button" class="media">
-                            <img src="assets/images/image2.jpg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/logo.png" alt="image1" class="media-img">
                         </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/image1.jpeg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image2.jpg" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/logo.png" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image1.jpeg" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/image2.jpg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/logo.png" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/image1.jpeg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image2.jpg" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/logo.png" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image1.jpeg" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/image1.jpeg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/logo.png" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/image2.jpg" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image1.jpeg" alt="image1" class="media-img">
+                        </a>
                     </div>
                     <div class="col-lg-2 col-6 media">
-                        <img src="assets/images/logo.png" alt="image1">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/image2.jpg" alt="image1" class="media-img">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 media">
+                        <a href="javascript:void(0)" role="button" class="media">
+                            <img src="assets/images/logo.png" alt="image1" class="media-img">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- Modal -->
+    <div class="media-modal " id="mediaModal" tabindex="-1" role="dialog">
+        <div class="media-modal-content">
+            <div class="modal-header h-50-px">
+                <h3 class="modal-title" id="mediaModalLabel">Attachment details</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="media-frame-content row" style="margin: 0;">
+                <div class="col-lg-8 col-12 media-primary">
+                    <img class="detail-image" src alt="Images">
+                </div>
+                <div class="col-lg-4 col-12 media-secondary">
+                    <div>
+                        <div>
+                            <b class="d-inline-block">Uploaded on: </b>
+                            <span class="d-inline-block">12 March</span>
+                        </div>
+                        <div>
+                            <b class="d-inline-block">Uploaded by: </b>
+                            <a href="#" class="d-inline-block">AminAli</a>
+                        </div>
+                        <div>
+                            <b class="d-inline-block">File name: </b>
+                            <span href="#" class="d-inline-block">image1.jpeg</span>
+                        </div>
+                        <div>
+                            <b class="d-inline-block">File type: </b>
+                            <span href="#" class="d-inline-block">image/jpeg</span>
+                        </div>
+                        <div>
+                            <b class="d-inline-block">File size: </b>
+                            <span href="#" class="d-inline-block">120 KB</span>
+                        </div>
+                        <div>
+                            <b class="d-inline-block">Dimensions: </b>
+                            <span href="#" class="d-inline-block">300px in 500px</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media-modal-backdrop"></div>
+    </div>
     <!--scripts-->
     <script src="assets/scripts/jquery-1.12.2.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.5.7/basic/ckeditor.js"></script>
     <script src="assets/scripts/admin.js"></script>
 
     <script src="assets/vendor/bootstrap-v4.5/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        document.querySelector("button[data-dismiss='modal']").addEventListener('click', (el) => {
+            document.querySelector("#mediaModal").style.display = "none";
+        })
+        document.querySelector(".media-modal-backdrop").addEventListener('click', (el) => {
+            document.querySelector("#mediaModal").style.display = "none";
+        })
+        $('.media-img').on('click', function() {
+            document.querySelector(".detail-image").src = this.src;
+            document.querySelector("#mediaModal").style.display = "block";
+        })
+    </script>
 </body>
 
 </html>
