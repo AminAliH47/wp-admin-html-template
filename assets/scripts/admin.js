@@ -143,7 +143,7 @@ window.addEventListener('load', () => {
             let labels = $("#category-container label");
 
             searchCat.addEventListener('keyup', (el) => {
-                let val = el.target.value;
+                let val = (el.target.value).toLowerCase();
                 if (val == "") {
                     labels.parent().show();
                 } else {

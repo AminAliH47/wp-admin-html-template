@@ -9,7 +9,7 @@
     <title>Document</title>
 
     <!--styles-->
-    <link rel="stylesheet" href="assets/vendor/bootstrap-v4.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-v4.5/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/rtl.css">
 
@@ -62,13 +62,33 @@
                 </ul>
             </li>
         </ul>
+        <ul dropdown class="dp-left">
+            <li>
+                <a href="#">
+                    <span class="fa fa-user"></span>
+                    <span class="title">Hello AminAli!</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                        Edit profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Logout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <!--sidebar-->
     <div class="cosidebar">
         <ul>
             <li>
-                <a href="#">
+                <a href="index.html">
                     <span class="fa fa-tachometer"></span>
                     <span class="title">
                     Dashboard
@@ -220,10 +240,10 @@
                         <div class="box-container post-content">
                             <div class="box">
                                 <h3 class="handle">
-                                    test et
+                                    Test Block
                                 </h3>
                                 <div class="box-content">
-                                    test et bakalm
+                                    This is a test block for add new post
                                 </div>
                             </div>
                         </div>
@@ -336,27 +356,43 @@
                                 </ul>
                             </div>
                             <div class="add-new-cat">
-                                <a href="#" data-target="#add-new-cat" data-toggle="collapse" role="button">
+                                <a href="#" id="toggle-cat-collapse" role="button">
                                     <i class="fa fa-plus"></i> Add New Category
                                 </a>
                             </div>
-                            <div class="collapsing mt-4" id="add-new-cat">
-                                <label for="cat-title">
-                                    Category Title
-                                </label>
-                                <input type="text" id="cat-title">
+                            <div class="mt-4" id="add-new-cat" style="display: none;">
+                                <input class="mt-3" type="text" id="cat-title" placeholder="Category Title">
 
-                                <label for="cat-parent">
-                                    Category parent
-                                </label>
-                                <select name="cat-parent" id="cat-parent">
-                                    <option value="1">
+                                <select class="w-100 mt-3" name="cat-parent" id="cat-parent">
+                                    <option value="1" selected>
+                                        -- Parent Category --
+                                    </option>
+                                    <option value="1" class="level-0">
                                         Digital
                                     </option>
-                                    <option value="2">
-                                        Mobile   
+                                    <option value="2" class="level-1">
+                                       &nbsp; Mobile   
+                                    </option>
+                                    <option value="3" class="level-2">
+                                       &nbsp;&nbsp;&nbsp; Apple   
+                                    </option>
+                                    <option value="3" class="level-2">
+                                       &nbsp;&nbsp;&nbsp; Samsung   
+                                    </option>
+                                    <option value="3" class="level-2">
+                                       &nbsp;&nbsp;&nbsp; Xiaomi   
+                                    </option>
+                                    <option value="2" class="level-1">
+                                       &nbsp; Laptop   
+                                    </option>
+                                    <option value="2" class="level-1">
+                                       &nbsp; PC   
+                                    </option>
+                                    <option value="2" class="level-1">
+                                       &nbsp; Camera   
                                     </option>
                                 </select>
+                                <a href="#" class="btn mt-3">Add New Category</a>
                             </div>
                         </div>
                     </div>
@@ -410,6 +446,10 @@
             onEnd: function(evt) {
                 B.style.border = "3px dashed transparent"
             },
+        });
+
+        $("#toggle-cat-collapse").click(function() {
+            $("#add-new-cat").toggle();
         });
     </script>
 </body>

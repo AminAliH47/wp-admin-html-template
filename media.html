@@ -304,7 +304,7 @@
                     <img class="detail-image" src alt="Images">
                 </div>
                 <div class="col-lg-4 col-12 media-secondary">
-                    <div>
+                    <div class="media-detail">
                         <div>
                             <b class="d-inline-block">Uploaded on: </b>
                             <span class="d-inline-block">12 March</span>
@@ -315,20 +315,21 @@
                         </div>
                         <div>
                             <b class="d-inline-block">File name: </b>
-                            <span href="#" class="d-inline-block">image1.jpeg</span>
+                            <span id="" class="d-inline-block">image1.jpeg</span>
                         </div>
                         <div>
                             <b class="d-inline-block">File type: </b>
-                            <span href="#" class="d-inline-block">image/jpeg</span>
+                            <span id="" class="d-inline-block">image/jpeg</span>
                         </div>
                         <div>
                             <b class="d-inline-block">File size: </b>
-                            <span href="#" class="d-inline-block">120 KB</span>
+                            <span id="media-size" class="d-inline-block"></span>
                         </div>
                         <div>
                             <b class="d-inline-block">Dimensions: </b>
-                            <span href="#" class="d-inline-block">300px in 500px</span>
+                            <span id="" class="d-inline-block">300px in 500px</span>
                         </div>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -350,6 +351,8 @@
         })
         $('.media-img').on('click', function() {
             document.querySelector(".detail-image").src = this.src;
+
+
             document.querySelector("#mediaModal").style.display = "block";
         })
     </script>

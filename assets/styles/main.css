@@ -377,11 +377,11 @@ input[type=radio]:checked::after {
     display: inline-block;
     text-decoration: none;
     font-size: 13px;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight: 400;
+    line-height: 0;
     height: 28px;
     margin: 0;
-    padding: 0 10px 1px;
+    padding: 14px 10px;
     cursor: pointer;
     -webkit-appearance: none;
     -webkit-border-radius: 3px;
@@ -1293,7 +1293,7 @@ body {
 
 .media-primary {
     padding: 16px;
-    height: 100%;
+    height: auto;
 }
 
 .media-primary .detail-image {
@@ -1364,6 +1364,23 @@ body {
     overflow: auto;
     background: #fff;
     /* border-top: 1px solid #dcdcde;*/
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.media-detail div {
+    margin: 9px 0;
+    font-size: 13px;
+}
+
+.media-detail div b {
+    color: #646970;
+}
+
+.media-detail div span {
+    color: #646970;
 }
 
 @media all and (max-width: 500px) {
