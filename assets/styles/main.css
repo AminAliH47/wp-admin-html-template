@@ -101,7 +101,8 @@ section {
 }
 
 body {
-    line-height: 1;
+    /* line-height: 1; */
+    overflow-x: hidden;
 }
 
 ol,
@@ -663,8 +664,8 @@ body {
 .cosidebar {
     height: calc(100% - 32px);
     height: -webkit-calc(100% - 32px);
-    width: 180px;
-    background: #23282d;
+    width: 160px;
+    background: #1D2327;
     box-sizing: border-box;
     padding-top: 12px;
     float: left;
@@ -1131,31 +1132,31 @@ body {
 
 /* width */
 
- ::-webkit-scrollbar {
+ /* ::-webkit-scrollbar {
     width: 10px;
-}
+} */
 
 
 /* Track */
 
- ::-webkit-scrollbar-track {
+ /* ::-webkit-scrollbar-track {
     background: #f1f1f1;
-}
+} */
 
 
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+ /* ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
-}
+} */
 
 
 /* Handle on hover */
 
- ::-webkit-scrollbar-thumb:hover {
+ /* ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
+} */
 
 .move-trash {
     color: #b32d2e;
